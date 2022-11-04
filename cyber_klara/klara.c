@@ -16,7 +16,7 @@ int main()
   }
 
   char all_names[n][50];
-
+  
   for (int i = 0; i < n; i++)
   {
     char full_name[50];
@@ -26,6 +26,7 @@ int main()
     strcpy(all_names[i], full_name);
   }
 
+  // qsort() can be used for sorting an array
   qsort(all_names, n, 50, strcmp);
   int count = 0;
   
